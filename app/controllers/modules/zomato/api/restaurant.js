@@ -14,8 +14,9 @@ const fetchRestaurant = (lat, lon) => {
       method: 'GET',
       url: 'https://developers.zomato.com/api/v2.1/search',
       qs: {
-        'lat': this.lat,
-        'lon': this.lon,
+
+        'lat': lat,
+        'lon': lon,
         'radius': 'poiuy'
       },
       headers:{
